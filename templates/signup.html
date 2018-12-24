@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" name="Limmy_2016211461">
+	<title>Sign Up Your Contact!</title>
+</head>
+<body style="background: #FFEBCD;text-align: center;">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+	<div style="margin-top: 13%;">{{ str }}</div>
+	<div style="background: #FFFFE0;min-width: 230px;width: 23%;border:1px solid;border-radius:25px;margin-left: auto;margin-right: auto;box-shadow: 10px 10px 5px #888888;">
+		<span><font>Sign Up Your Contact!</font></span>
+		<form name="up" method="POST">
+            {% csrf_token %}
+			<div style="position: relative;">
+				<div style="">
+					<div style="position:relative">
+						<div><font size="2" color="#838B8B">Username</font>&nbsp;</div>
+						<input id="username" type="text" name="u" width="25%" maxlength="26" placeholder="Account" autocomplete="off">
+						<div><font size="2" color="#838B8B">Password</font>&nbsp;</div>
+						<input id="password" type="password" name="p" width="25%" maxlength="16" placeholder="Password"/>
+                        <div><font size="2" color="#838B8B">Confirm Password</font>&nbsp;</div>
+						<input id="confirmpassword" type="text" name="e" width="25%" maxlength="16" placeholder="Email"/>
+					</div>
+					<div style="height:40px;line-height:40px;clear:both;position:relative;">
+						<input type="submit" name="signup" value="Sign Up" />
+					</div>
+				</div>
+			</div>
+		</form>
+		<div style="text-align: center;">
+			<span><font size="1" color="gray">Copyright © 2018 limmy.free.wtbuser.cn All Rights Reserved</font></span>
+		</div>
+	</div>
+</body>
+</html>
